@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang='en'>
+
+  <head>
+  <meta charset='utf-8'>
+  <title>Paventhan</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+
+  <link rel='preconnect' href='https://fonts.gstatic.com'>
+<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+<link rel="icon" href="Images/2-modified.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+<link rel='preload' as='style' href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap' media='print' onload="this.media='all'">
+<style>
+  :root {
+    --color-text-primary: #333333;
+    --color-text-secondary: #333333;
+    --color-border: #bfbfbf;
+    --color-background-primary: #edede8;
+    --color-background-secondary: #D3D3C7;
+  }
+</style>
+  <script>
+    var pagination_next_page_number       = '',
+        pagination_available_pages_number = '',
+        pagination_loading_text           = 'Loading',
+        pagination_more_posts_text        = 'Load More';
+
+    document.documentElement.className = 'js-on';
+  </script>
+
+  <meta name="generator" content="Ghost 5.52">
+    <link rel="alternate" type="application/rss+xml" title="Paventhan" href="https://www.paventhan.com/rss/">
+    
+    
+    <link href="https://www.paventhan.com/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=ed8c054bb8"></script><style>:root {--ghost-accent-color: #000000;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=ed8c054bb8">
+</head>
+  <body class=''>
+    <header class='c-header'>
+  <a href='#main' class='c-skip'>Skip to content</a>
+  <div class='o-grid'>
+    <div class='c-header__inner'>
+      <div class='c-logo'>
+          <a class='c-logo__link' href='https://www.paventhan.com'>Paventhan</a>
+      </div>
+
+      <div class='c-nav-wrap'>
+        <ul class='c-nav u-plain-list'>
+          <li class='c-nav__item c-nav__item--main'><a href='about' class='c-nav__link' >About</a></li>
+<li class='c-nav__item c-nav__item--main'><a href='work' class='c-nav__link' >Work</a></li>
+<li class='c-nav__item c-nav__item--main'><a href='podcast' class='c-nav__link' >Podcast</a></li>
+<li class='c-nav__item c-nav__item--main'><a href='advising' class='c-nav__link' >Advising</a></li>
+<li class='c-nav__item c-nav__item--main'><a href='https://paventhan.substack.com/' class='c-nav__link' >Substack</a></li>
+
+
+          <li class='c-nav__item c-nav__item--search'><button class="gh-search-icon" aria-label="search" data-ghost-search style="display: inline-flex; justify-content: center; align-items: center; width: 32px; height: 32px; padding: 0; border: 0; color: inherit; background-color: transparent; cursor: pointer; outline: none;"><svg width="20" height="20" fill="none" viewBox="0 0 24 24"><path d="M14.949 14.949a1 1 0 0 1 1.414 0l6.344 6.344a1 1 0 0 1-1.414 1.414l-6.344-6.344a1 1 0 0 1 0-1.414Z" fill="currentColor"/><path d="M10 3a7 7 0 1 0 0 14 7 7 0 0 0 0-14Zm-9 7a9 9 0 1 1 18 0 9 9 0 0 1-18 0Z" fill="currentColor"/></svg></button></li>
+        </ul>
+      </div>
+
+      <div class='js-nav-toggle c-nav-toggle'>
+        <span class='c-nav-toggle__icon'></span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  var dropDown_list = [],
+    latest_navigation_item,
+    nav_list = document.querySelectorAll('.c-nav .c-nav__item--main');
+
+  var newMenuList = [];
+  var menuTree = {};
+
+  nav_list.forEach( (item, index) => {
+    if(item.childNodes[0].innerText.startsWith('-')) {
+      if(menuTree[newMenuList.length - 1]) {
+        menuTree[newMenuList.length - 1].push(item);
+      } else {
+        menuTree[newMenuList.length - 1] = [item];
+      }
+    } else {
+      newMenuList.push(item);
+    }
+  });
+
+  nav_list = newMenuList.map((item, index) => {
+    if(menuTree[index]) {
+      let dropdown = document.createElement('ul');
+      dropdown.className = 'c-nav__dropDown u-plain-list';
+
+      menuTree[index].forEach(child => {
+        dropDown_item_text = child.childNodes[0].innerText;
+        child.childNodes[0].innerText = dropDown_item_text.replace('- ', '');
+        dropdown.appendChild(child);
+      });
+
+      item.className += ' c-nav__item--hasDropDown';
+      item.appendChild(dropdown);
+    }
+    return item;
+  });
+</script>
+    <main id='main'>
+      
+<header class='c-page-header'>
+  <div class='o-grid o-grid--2-columns'>
+    <h1 class='c-page-header__heading u-font-heading'>404</h1>
+    <p class='c-page-header__subHeading u-font-subHeading'>Page Not Found</p>
+  </div>
+</header>
+
+    <div class='c-section'>
+      <div class='o-grid'>
+        <div class='c-section-headline'>
+          <h2 class='c-section-headline__title'>Work</h2>
+        </div>
+      </div>
+
+      <div class='o-grid o-grid--2-columns'>
+          <div class='js-card c-card-work post tag-work tag-engineering tag-leadership '>
+    <div class='c-card-work__media'>
+      <img
+        class='c-card-work__image'
+        alt=""
+        src='Images/Immunefi.png'
+      >
+    </div>
+
+  <h3 class='c-card-work__title'><a href='immunefi' class='c-card-work__link'>Immunefi</a></h3>
+
+  <div class='c-card-work__tags u-color-text-secondary u-font-size-small'>
+    <a href="">White Hat</a>&ensp; ✺ &ensp;<a href="">Blockchain
+    </a>
+  </div>
+</div>          <div class='js-card c-card-work post tag-work tag-content-creation tag-mentorship '>
+    <div class='c-card-work__media'>
+      <img
+        class='c-card-work__image'
+        alt=""
+        src='Images/Intigriti.webp'
+      >
+    </div>
+
+  <h3 class='c-card-work__title'><a href='intigriti' class='c-card-work__link'>Intigriti</a></h3>
+
+  <div class='c-card-work__tags u-color-text-secondary u-font-size-small'>
+    <a href="">Pentesting</a>&ensp; ✺ &ensp;<a href=''>Web Application</a>
+  </div>
+</div>          <div class='js-card c-card-work post tag-work tag-engineering tag-leadership '>
+    <div class='c-card-work__media'>
+      <img
+        class='c-card-work__image'
+        alt=""
+        src='Images/dream aerodpace.jpg'
+      >
+    </div>
+
+  <h3 class='c-card-work__title'><a href='dream aerospace' class='c-card-work__link'>Dream Aerospace</a></h3>
+
+  <div class='c-card-work__tags u-color-text-secondary u-font-size-small'>
+    <a href="">Engineering</a>&ensp; ✺ &ensp;<a href="">Design</a>
+  </div>
+</div>          <div class='js-card c-card-work post tag-work tag-engineering tag-leadership '>
+    <div class='c-card-work__media'>
+      <img
+        class='c-card-work__image'
+        alt=""
+        src='Images/Threedotzero.png'
+      >
+    </div>
+
+  <h3 class='c-card-work__title'><a href='threedotzero' class='c-card-work__link'>ThreeDotZero</a></h3>
+
+  <div class='c-card-work__tags u-color-text-secondary u-font-size-small'>
+    <a href="">Conten Creation</a>&ensp; ✺ &ensp;<a href="">Newsletter</a>
+  </div>
+</div>      </div>
+    </div>
+
+
+    </main>
+
+    <footer class='c-footer'>
+    
+
+  <div class='o-grid'>
+    <ul class='u-plain-list c-footer-nav'>
+    <li>
+      <a href='https://twitter.com/Pavenes' class='c-social-link'>Twitter</a>
+    </li>
+
+
+    <li>
+      <a href='https://www.instagram.com/_hoffcave_/' class='c-social-link'>Instagram</a>
+    </li>
+
+
+    <li>
+      <a href='https://www.linkedin.com/in/pavenes/' class='c-social-link'>LinkedIn</a>
+    </li>
+
+    <li>
+      <a href='mailto:paven.sec@gmail.com' class='c-social-link'>Mail</a>
+    </li>
+</ul>  </div>
+
+  <div class='o-grid'>
+    <div class='c-footer-copy'>
+      &copy; 2023 Paventhan
+    </div>
+  </div>
+</footer>
+    <script src='https://www.paventhan.com/assets/js/app.min.js?v=ed8c054bb8'></script>
+    
+  </body>
+</html>
